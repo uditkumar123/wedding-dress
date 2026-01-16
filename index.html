@@ -179,15 +179,16 @@
             <div class="lg:col-span-5">
                 <div class="sticky top-8">
                     <h3 class="text-2xl font-serif text-bridal-red mb-6 border-b pb-2 border-gray-200">Visual Inspiration</h3>
+                    <p class="text-sm text-gray-500 mb-4 italic">Click on any image to enlarge.</p>
                     
                     <div class="grid grid-cols-1 gap-6">
                         
                         <!-- Image Card 1 -->
-                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer bg-white" onclick="openModal('8aefd3e9-2edc-4b53-aed2-d3d91beb6e44.jpeg')">
                             <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Reference 1</div>
                             <img src="8aefd3e9-2edc-4b53-aed2-d3d91beb6e44.jpeg" 
                                  alt="Embroidery Inspiration 1" 
-                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 class="w-full h-auto object-contain transform transition duration-500 hover:opacity-90"
                                  onerror="this.src='https://placehold.co/600x400/800020/white?text=Image+1+Not+Found'">
                             <div class="bg-white p-3 border-b-4 border-[#C5A059]">
                                 <p class="text-sm font-semibold text-gray-700">Main Composition / Layout</p>
@@ -195,11 +196,11 @@
                         </div>
 
                         <!-- Image Card 2 -->
-                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer bg-white" onclick="openModal('5f752455-98b1-4b14-9e91-2ae863c62013.jpeg')">
                             <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Reference 2</div>
                             <img src="5f752455-98b1-4b14-9e91-2ae863c62013.jpeg" 
                                  alt="Embroidery Inspiration 2" 
-                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 class="w-full h-auto object-contain transform transition duration-500 hover:opacity-90"
                                  onerror="this.src='https://placehold.co/600x400/800020/white?text=Image+2+Not+Found'">
                             <div class="bg-white p-3 border-b-4 border-[#C5A059]">
                                 <p class="text-sm font-semibold text-gray-700">Motif Details</p>
@@ -207,20 +208,20 @@
                         </div>
 
                          <!-- Image Card 3 -->
-                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer bg-white" onclick="openModal('Gemini_Generated_Image_yppjr1yppjr1yppj.png')">
                             <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Generated Concept 1</div>
                             <img src="Gemini_Generated_Image_yppjr1yppjr1yppj.png" 
                                  alt="AI Concept Art 1" 
-                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 class="w-full h-auto object-contain transform transition duration-500 hover:opacity-90"
                                  onerror="this.src='https://placehold.co/600x400/800020/white?text=Concept+1+Not+Found'">
                         </div>
 
                         <!-- Image Card 4 -->
-                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer bg-white" onclick="openModal('Gemini_Generated_Image_4jkjy54jkjy54jkj.png')">
                             <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Generated Concept 2</div>
                             <img src="Gemini_Generated_Image_4jkjy54jkjy54jkj.png" 
                                  alt="AI Concept Art 2" 
-                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 class="w-full h-auto object-contain transform transition duration-500 hover:opacity-90"
                                  onerror="this.src='https://placehold.co/600x400/800020/white?text=Concept+2+Not+Found'">
                         </div>
 
@@ -235,6 +236,33 @@
         <p class="font-serif italic text-lg text-[#C5A059] mb-2">The Royal Menagerie</p>
         <p class="text-sm">Confidential Design Specification | Fall/Winter Bridal Collection</p>
     </footer>
+
+    <!-- Modal for Image Preview -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeModal()">
+        <span class="absolute top-5 right-5 text-white text-5xl cursor-pointer hover:text-[#C5A059]">&times;</span>
+        <img id="modalImage" src="" class="max-w-full max-h-screen rounded-lg shadow-2xl border-2 border-[#C5A059]">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.getElementById('modalImage').src = '';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
 
 </body>
 </html>

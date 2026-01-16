@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Menagerie - Bridal Couture Specification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bridal-red: #800020; /* Deep Burgundy/Maroon */
+            --antique-gold: #C5A059;
+            --light-gold: #F4E4BC;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FAFAFA;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-bridal-red {
+            color: var(--bridal-red);
+        }
+        .bg-bridal-red {
+            background-color: var(--bridal-red);
+        }
+        .text-gold {
+            color: var(--antique-gold);
+        }
+        .border-gold {
+            border-color: var(--antique-gold);
+        }
+        .gold-accent {
+            background: linear-gradient(90deg, #C5A059 0%, #E6C888 50%, #C5A059 100%);
+            height: 2px;
+            width: 100%;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-bridal-red text-white py-12 px-6 shadow-lg border-b-4 border-[#C5A059]">
+        <div class="max-w-5xl mx-auto text-center">
+            <p class="uppercase tracking-[0.3em] text-sm text-[#F4E4BC] mb-3">Bridal Couture Design Brief</p>
+            <h1 class="text-4xl md:text-6xl font-bold italic mb-4">The Royal Menagerie</h1>
+            <p class="text-lg text-[#E6C888] font-light max-w-2xl mx-auto">
+                A masterpiece panel harmonizing organic floral vines with regal animal motifs in high-density Zardozi.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- Project Metadata Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center">
+            <div class="p-6 bg-white card-shadow rounded-lg border-t-4 border-[#800020]">
+                <i class="fas fa-palette text-3xl text-bridal-red mb-3"></i>
+                <h3 class="text-lg font-bold uppercase tracking-wide">Base Fabric</h3>
+                <p class="text-gray-600 mt-1">Deep Bridal Red (Maroon)</p>
+            </div>
+            <div class="p-6 bg-white card-shadow rounded-lg border-t-4 border-[#C5A059]">
+                <i class="fas fa-gem text-3xl text-[#C5A059] mb-3"></i>
+                <h3 class="text-lg font-bold uppercase tracking-wide">Technique</h3>
+                <p class="text-gray-600 mt-1">Zardozi, Dabka & Nakshi</p>
+            </div>
+            <div class="p-6 bg-white card-shadow rounded-lg border-t-4 border-[#800020]">
+                <i class="fas fa-leaf text-3xl text-bridal-red mb-3"></i>
+                <h3 class="text-lg font-bold uppercase tracking-wide">Theme</h3>
+                <p class="text-gray-600 mt-1">Organic Vines & Royal Animals</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Column: Design Specification Text -->
+            <div class="lg:col-span-7 space-y-10">
+                
+                <!-- Section 1 -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl font-serif text-[#E6C888] mr-4">01</span>
+                        <h2 class="text-3xl font-serif text-bridal-red">Design Philosophy</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        The objective is to create a masterpiece bridal panel that harmonizes <strong>organic, flowing nature</strong> with <strong>regal animal motifs</strong>. The design balances the softness of floral vines with the bold structure of royal animals. The overall feel is <em>heirloom luxury</em>—comparable to heritage archival pieces but with a contemporary, fluid layout.
+                    </p>
+                </section>
+
+                <div class="gold-accent opacity-50"></div>
+
+                <!-- Section 2 -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl font-serif text-[#E6C888] mr-4">02</span>
+                        <h2 class="text-3xl font-serif text-bridal-red">Main Composition</h2>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border-l-4 border-[#800020] card-shadow">
+                        <h3 class="text-xl font-bold mb-3 font-serif">The "Organic Vine" Framework</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-[8px] mt-2 mr-3 text-[#C5A059]"></i>
+                                <span><strong>Flow:</strong> Avoid rigid geometric grids. Vines meander naturally from the bottom border upwards.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-[8px] mt-2 mr-3 text-[#C5A059]"></i>
+                                <span><strong>Texture:</strong> Use <em>Dabka</em> and <em>Nakshi</em> for 3D relief. Leaves filled with <em>French knots</em> or seed pearls.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-[8px] mt-2 mr-3 text-[#C5A059]"></i>
+                                <span><strong>Integration:</strong> The vines serve as the "habitat," wrapping gently around the animals.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 3 -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl font-serif text-[#E6C888] mr-4">03</span>
+                        <h2 class="text-3xl font-serif text-bridal-red">The Royal Menagerie</h2>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">Animals to be integrated into the lower half of the panel.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Peacock -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-full bg-[#800020] flex items-center justify-center text-white font-serif text-xl">A</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">The Peacock</h4>
+                                <p class="text-gray-600 mt-1">Perched on a sturdy branch. Expansive tail feathers with distinct "eyes" (mor pankh) using micro-sequins. High-relief neck embroidery.</p>
+                            </div>
+                        </div>
+                        <!-- Tiger -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-full bg-[#800020] flex items-center justify-center text-white font-serif text-xl">B</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">The Tiger</h4>
+                                <p class="text-gray-600 mt-1">Prowling or seated at the base. Directional thread work to mimic fur. Darker antique gold stripes for depth.</p>
+                            </div>
+                        </div>
+                        <!-- Elephant -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-full bg-[#800020] flex items-center justify-center text-white font-serif text-xl">C</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-gray-900">The Elephant</h4>
+                                <p class="text-gray-600 mt-1">Caparisoned (ornamental decoration). <em>Howdah</em> and head coverings feature miniature geometrical patterns. <em>Kora</em> work for texture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="gold-accent opacity-50"></div>
+
+                <!-- Section 4 -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl font-serif text-[#E6C888] mr-4">04</span>
+                        <h2 class="text-3xl font-serif text-bridal-red">Tech Specs</h2>
+                    </div>
+                     <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-gray-900 mb-2">Border & Finishing</h3>
+                        <p class="text-gray-700 mb-4">4-6 inch dense band with <em>Mehrab</em> arches. Scalloped bottom edge with heavy Zardozi rope outline.</p>
+                        
+                        <h3 class="font-bold text-gray-900 mb-2">Materials</h3>
+                        <p class="text-gray-700">Pure silk thread, copper-based gold wire, <em>Badla</em> (flat wire), semi-precious beads. <em>Ganga-Jamuna</em> shading technique.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column: Visual Inspiration Gallery -->
+            <div class="lg:col-span-5">
+                <div class="sticky top-8">
+                    <h3 class="text-2xl font-serif text-bridal-red mb-6 border-b pb-2 border-gray-200">Visual Inspiration</h3>
+                    
+                    <div class="grid grid-cols-1 gap-6">
+                        
+                        <!-- Image Card 1 -->
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Reference 1</div>
+                            <img src="8aefd3e9-2edc-4b53-aed2-d3d91beb6e44.jpeg" 
+                                 alt="Embroidery Inspiration 1" 
+                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 onerror="this.src='https://placehold.co/600x400/800020/white?text=Image+1+Not+Found'">
+                            <div class="bg-white p-3 border-b-4 border-[#C5A059]">
+                                <p class="text-sm font-semibold text-gray-700">Main Composition / Layout</p>
+                            </div>
+                        </div>
+
+                        <!-- Image Card 2 -->
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Reference 2</div>
+                            <img src="5f752455-98b1-4b14-9e91-2ae863c62013.jpeg" 
+                                 alt="Embroidery Inspiration 2" 
+                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 onerror="this.src='https://placehold.co/600x400/800020/white?text=Image+2+Not+Found'">
+                            <div class="bg-white p-3 border-b-4 border-[#C5A059]">
+                                <p class="text-sm font-semibold text-gray-700">Motif Details</p>
+                            </div>
+                        </div>
+
+                         <!-- Image Card 3 -->
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Generated Concept 1</div>
+                            <img src="Gemini_Generated_Image_yppjr1yppjr1yppj.png" 
+                                 alt="AI Concept Art 1" 
+                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 onerror="this.src='https://placehold.co/600x400/800020/white?text=Concept+1+Not+Found'">
+                        </div>
+
+                        <!-- Image Card 4 -->
+                        <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <div class="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-br-lg z-10">Generated Concept 2</div>
+                            <img src="Gemini_Generated_Image_4jkjy54jkjy54jkj.png" 
+                                 alt="AI Concept Art 2" 
+                                 class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-105"
+                                 onerror="this.src='https://placehold.co/600x400/800020/white?text=Concept+2+Not+Found'">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#2a2a2a] text-gray-400 py-8 text-center mt-12">
+        <p class="font-serif italic text-lg text-[#C5A059] mb-2">The Royal Menagerie</p>
+        <p class="text-sm">Confidential Design Specification | Fall/Winter Bridal Collection</p>
+    </footer>
+
+</body>
+</html>

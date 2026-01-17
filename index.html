@@ -12,6 +12,7 @@
             --bridal-red: #800020; /* Deep Burgundy/Maroon */
             --antique-gold: #C5A059;
             --light-gold: #F4E4BC;
+            --ivory: #FDFBF7;
         }
         body {
             font-family: 'Lato', sans-serif;
@@ -40,6 +41,10 @@
         }
         .card-shadow {
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .link-card:hover {
+            border-color: var(--antique-gold);
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -81,6 +86,25 @@
             
             <!-- Left Column: Design Specification Text -->
             <div class="lg:col-span-7 space-y-10">
+
+                <!-- Section: Concept Preview (New) -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <h2 class="text-3xl font-serif text-bridal-red">Concept Preview</h2>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl border-4 border-[#C5A059] group cursor-pointer" onclick="openModal('Gemini_Generated_Image_yppjr1yppjr1yppj.png')">
+                        <img src="Gemini_Generated_Image_yppjr1yppjr1yppj.png" 
+                             alt="Bridal Lehenga Concept Preview" 
+                             class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/800x600/800020/white?text=Concept+Preview+Loading...'">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/70 to-transparent p-6 pt-12">
+                            <p class="text-white font-serif text-2xl italic">Proposed Design Visualization</p>
+                            <p class="text-[#F4E4BC] text-xs uppercase tracking-widest mt-1">Digital Sketch • Click to Expand</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="gold-accent opacity-50"></div>
                 
                 <!-- Section 1 -->
                 <section>
@@ -170,6 +194,108 @@
                         
                         <h3 class="font-bold text-gray-900 mb-2">Materials</h3>
                         <p class="text-gray-700">Pure silk thread, copper-based gold wire, <em>Badla</em> (flat wire), semi-precious beads. <em>Ganga-Jamuna</em> shading technique.</p>
+                    </div>
+                </section>
+
+                <div class="gold-accent opacity-50"></div>
+
+                <!-- Section 5: Partner's Inspiration -->
+                <section>
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl font-serif text-[#E6C888] mr-4">05</span>
+                        <h2 class="text-3xl font-serif text-bridal-red">Bride's Inspirations & Shortlist</h2>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">The following styles have been shortlisted by the bride as key inspirations for the silhouette and mood.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Red Group (Ceremony) -->
+                        <div class="bg-white p-5 rounded-lg border-t-4 border-[#800020] card-shadow">
+                            <h3 class="text-lg font-bold font-serif text-[#800020] mb-4 flex items-center">
+                                <i class="fas fa-heart mr-2"></i> Ceremony (Red)
+                            </h3>
+                            <ul class="space-y-4">
+                                <!-- Item 1 -->
+                                <li class="p-4 rounded bg-gray-50 border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Maroon Indian Bridal Lehenga</span>
+                                        <a href="https://www.etsy.com/in-en/listing/4349628735/maroon-color-indian-bridal-lehenga-heavy" target="_blank" class="text-xs text-[#800020] hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-tag mr-1 text-[#C5A059]"></i> <strong>Style:</strong> Heavy Traditional Indian</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-[#C5A059]"></i> <strong>Features:</strong> Deep Maroon tone, dense embroidery suitable for main wedding rituals.</p>
+                                    </div>
+                                </li>
+
+                                <!-- Item 2 -->
+                                <li class="p-4 rounded bg-gray-50 border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Custom Pakistani Bridal</span>
+                                        <a href="https://www.etsy.com/in-en/listing/4299847499/custom-pakistani-bridal-lehenga-heavy" target="_blank" class="text-xs text-[#800020] hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-tag mr-1 text-[#C5A059]"></i> <strong>Style:</strong> Pakistani Couture</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-[#C5A059]"></i> <strong>Features:</strong> Likely features a longer choli/kurta cut, intricate silver-gold mix work, and a trailing dupatta.</p>
+                                    </div>
+                                </li>
+
+                                <!-- Item 3 -->
+                                <li class="p-4 rounded bg-gray-50 border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Handmade Barat Lehenga</span>
+                                        <a href="https://www.etsy.com/in-en/listing/4428376668/red-bridal-lehenga-choli-handmade-barat" target="_blank" class="text-xs text-[#800020] hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-tag mr-1 text-[#C5A059]"></i> <strong>Style:</strong> Classic Barat</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-[#C5A059]"></i> <strong>Features:</strong> Handmade craftsmanship, emphasizing the "Red" bridal aesthetic with floral vine motifs.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- White Group (Reception) -->
+                        <div class="bg-[#FDFBF7] p-5 rounded-lg border-t-4 border-gray-300 card-shadow">
+                            <h3 class="text-lg font-bold font-serif text-gray-600 mb-4 flex items-center">
+                                <i class="fas fa-glass-cheers mr-2"></i> Reception (White)
+                            </h3>
+                            <ul class="space-y-4">
+                                <!-- Item 1 -->
+                                <li class="p-4 rounded bg-white border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Off-White Embroidered Net</span>
+                                        <a href="https://www.etsy.com/in-en/listing/4302293478/made-to-order-off-white-embroidered-net" target="_blank" class="text-xs text-gray-500 hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-layer-group mr-1 text-gray-400"></i> <strong>Fabric:</strong> Net (Structured/Voluminous)</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-gray-400"></i> <strong>Features:</strong> "Made to order" implies custom fit. Net fabric offers a fairy-tale, flared look perfect for receptions.</p>
+                                    </div>
+                                </li>
+
+                                <!-- Item 2 -->
+                                <li class="p-4 rounded bg-white border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Hand Embroidered Ivory</span>
+                                        <a href="https://www.etsy.com/in-en/listing/4330705710/hand-embroidered-ivory-bridal-lehenga" target="_blank" class="text-xs text-gray-500 hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-layer-group mr-1 text-gray-400"></i> <strong>Tone:</strong> Ivory (Softer than stark white)</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-gray-400"></i> <strong>Features:</strong> Focus on "Hand Embroidery" suggests delicate thread work or pearl/bead detailing suitable for evening wear.</p>
+                                    </div>
+                                </li>
+
+                                <!-- Item 3 -->
+                                <li class="p-4 rounded bg-white border border-gray-100 link-card transition duration-300">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <span class="text-sm font-bold text-gray-900">Off-White Georgette</span>
+                                        <a href="https://www.etsy.com/in-en/listing/1744603021/indian-lehenga-off-white-georgette" target="_blank" class="text-xs text-gray-500 hover:underline">View <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                    <div class="text-xs text-gray-600 space-y-1">
+                                        <p><i class="fas fa-layer-group mr-1 text-gray-400"></i> <strong>Fabric:</strong> Georgette (Fluid/Drapey)</p>
+                                        <p><i class="fas fa-info-circle mr-1 text-gray-400"></i> <strong>Features:</strong> Lighter weight than velvet or heavy silk. Excellent for dancing; likely features "Pearl Work" based on similar trends.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
